@@ -1,26 +1,16 @@
-# Raspberry Pi Facial Recognition Lock — Circuit Schematic
+# Create A Facial Recognition Door Lock With Raspberry Pi — Circuit Notes
 
-- Course: Create a Facial Recognition Door Lock With Raspberry Pi
-- Author: Ashraf S A AlMadhoun
-- Link: https://www.udemy.com/course/raspberry-pi-facial-recognition-door-lock-raspberry-pi/?couponCode=JULYMAXDICOUNT
+| Signal | Suggested Pin | Notes |
+| --- | --- | --- |
+| Sensor Input | A0 / GPIO | Adjust according to the Raspberry Pi board you own. |
+| Actuator Output | D9 / PWM Pin | Use a transistor/driver for high-current loads. |
+| Status LED | D13 or onboard LED | Mirrors the runtime state for quick debugging. |
 
-## Connections
+## Wiring Checklist
 
-- Camera: Raspberry Pi Camera Module to CSI connector.
-- Lock actuator: GPIO18 → transistor driver → solenoid/relay; diode across coil; separate supply.
+1. Power rails first (5V / 3.3V and GND).
+2. Route sensor outputs to the analog/digital pin noted above.
+3. Add current-limiting resistors where appropriate.
+4. Double-check common grounds between modules and the development board.
 
-## Diagram (ASCII)
-
-```
- GPIO18 ---[R]---|> NPN ----+----- Solenoid/Relay (+)
-                   |        |
-                  GND      [Diode] (across coil)
-                           |
-                          GND
- CSI Port -> Raspberry Pi Camera Module
-```
-
-## Purchase With Discount
-
-Get a discounted price and build a secure, camera-based door lock — enroll via the link above.
-
+Refer to the course lecture for the exact schematic; reuse these notes as a quick reference.

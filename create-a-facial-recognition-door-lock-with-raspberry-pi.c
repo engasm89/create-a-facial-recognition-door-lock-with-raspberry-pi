@@ -1,3 +1,11 @@
+/*
+ * Course: Create A Facial Recognition Door Lock With Raspberry Pi
+ * Platform: Raspberry Pi
+ * Author: Ashraf S A AlMadhoun
+ * Purpose: Auto-generated metadata block to document the learning goals.
+ * Notes: Auto-generated metadata block (2025-11-18)
+ */
+
 #include <stdio.h> // Include I/O for status printing
 #include <unistd.h> // Include POSIX sleep functions for timing
 
@@ -12,6 +20,7 @@ int camera_capture_frame(void) { return 0; } // Capture a frame from the camera 
 int recognize_face(void) { return 1; } // Return 1 if authorized face recognized (stub)
 
 // Program entry point
+// Main routine: orchestrates the create a facial recognition door lock with raspberry pi scenario
 int main(void) { // Start of main function
   printf("Facial Recognition Door Lock (Raspberry Pi)\n"); // Print startup message
   gpio_export(LOCK_GPIO); // Export GPIO for lock control
