@@ -6,6 +6,14 @@
  * Notes: Auto-generated metadata block (2025-11-18)
  */
 
+/*
+ * Course: Create A Facial Recognition Door Lock With Raspberry Pi
+ * Platform: Raspberry Pi
+ * Author: Ashraf S A AlMadhoun
+ * Purpose: Auto-generated metadata block to document the learning goals.
+ * Notes: Auto-generated metadata block (2025-11-18)
+ */
+
 #include <stdio.h> // Include I/O for status printing
 #include <unistd.h> // Include POSIX sleep functions for timing
 
